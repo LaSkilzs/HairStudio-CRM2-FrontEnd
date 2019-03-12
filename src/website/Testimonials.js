@@ -1,10 +1,12 @@
 import React from "react";
+import TestimonialQuotes from "../components/TestimonialQuotes";
+import "../website/welcome.css";
 
-const Testimonial = () => {
+const Testimonial = props => {
   return (
-    <div>
-      <h3>Testimonial</h3>
-    </div>
+    <section id="testimonial">
+      <TestimonialQuotes />
+    </section>
   );
 };
 

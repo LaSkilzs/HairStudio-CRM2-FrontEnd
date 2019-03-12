@@ -6,16 +6,19 @@ import Website from "./app/Website";
 import Client from "./app/Client";
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      loggedIn: false
+    };
+  }
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <h1>App Component</h1>
-          <Navbar />
-          <Login />
-          <Website />
-          <Client />
-        </header>
+      <div className="main-container">
+        <Navbar loggedIn={this.state.loggedIn} />
+        <Website />
+        <Login />
+        <Client />
       </div>
     );
   }
