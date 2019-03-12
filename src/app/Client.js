@@ -1,10 +1,20 @@
 import React from "react";
+import Profile from "../client/Profile";
+import Appointment from "../client/Appointment";
+import Line from "../client/Line";
+import Dashboard from "../client/Dashboard";
+import Newsfeed from "../client/Newsfeed";
 
 class Client extends React.Component {
   render() {
     return (
-      <div>
+      <div className="client-container">
         <h1>Client Here!</h1>
+        <Profile />
+        <Appointment />
+        <Line />
+        <Dashboard />
+        <Newsfeed />
       </div>
     );
   }

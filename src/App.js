@@ -8,14 +8,11 @@ import Client from "./app/Client";
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <h1>App Component</h1>
-          <Navbar />
-          <Login />
-          <Website />
-          <Client />
-        </header>
+      <div className="main-container">
+        <Navbar />
+        <Login />
+        <Website />
+        <Client />
       </div>
     );
   }

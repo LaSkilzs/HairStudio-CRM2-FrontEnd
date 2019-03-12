@@ -10,7 +10,7 @@ import Footer from "../website/Footer";
 class Website extends React.Component {
   render() {
     return (
-      <div>
+      <div className="website-container">
         <h1>Website here!</h1>
         <Home />
         <Gallery />

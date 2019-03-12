@@ -6,7 +6,7 @@ import SideB from "../login/SideB";
 class Login extends Component {
   render() {
     return (
-      <div>
+      <div className="login-container">
         <h1>Login Card Here!</h1>
         <SideA />
         <SideB />

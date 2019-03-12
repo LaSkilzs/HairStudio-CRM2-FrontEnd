@@ -1,16 +1,20 @@
 import React from "react";
 import Horizontal from "../navbar/Horizontal";
 import SideBar from "../navbar/SideBar";
+import Header from "../navbar/Header";
+import "../navbar/navbar.css";
 
 const Navbar = () => {
   return (
-    <div>
-      <nav>
-        <h1> Nav Bar here!</h1>
+    <section className="nav-container">
+      <nav className="hori-nav">
+        <Horizontal />
       </nav>
-      <SideBar />
-      <Horizontal />
-    </div>
+      <nav className="side-nav">
+        <Header />
+        <SideBar />
+      </nav>
+    </section>
   );
 };
 
