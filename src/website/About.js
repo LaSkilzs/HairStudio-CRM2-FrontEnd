@@ -1,11 +1,13 @@
 import React from "react";
+import "../website/welcome.css";
 
 class About extends React.Component {
   render() {
     return (
-      <div>
-        <h1>About here!</h1>
-      </div>
+      <section id="about">
+        <h1>We Are Professionals</h1>
+        <button type="button">Contact Us</button>
+      </section>
     );
   }
 }

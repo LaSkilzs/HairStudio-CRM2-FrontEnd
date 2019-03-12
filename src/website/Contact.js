@@ -1,11 +1,19 @@
 import React from "react";
+import ContactMap from "../components/ContactMap";
+import ContactForm from "../components/ContactForm";
+import Title from "../components/Title";
+import "../website/welcome.css";
 
 class Contact extends React.Component {
   render() {
     return (
-      <div>
-        <h1>Contact here!</h1>
-      </div>
+      <section id="contact">
+        <Title name="Contact Us" />
+        <div className="contact-container">
+          <ContactMap />
+          <ContactForm />
+        </div>
+      </section>
     );
   }
 }
