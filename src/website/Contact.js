@@ -1,6 +1,6 @@
 import React from "react";
-import ContactMap from "../components/ContactMap";
-import ContactForm from "../components/ContactForm";
+import ContactMap from "../contact/ContactMap";
+import ContactForm from "../contact/ContactForm";
 import Title from "../components/Title";
 import "../website/welcome.css";
 
