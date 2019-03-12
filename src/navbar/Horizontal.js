@@ -1,4 +1,5 @@
 import React from "react";
+import "../navbar/navbar.css";
 
 const Horizontal = () => {
   return (

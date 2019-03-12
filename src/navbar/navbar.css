@@ -1,56 +1,39 @@
-.nav-container {
-  background-color: var(--white);
-}
-
 .logo-container {
   padding: 0 20px 0 0;
   display: flex;
   justify-content: space-between;
   background: var(--pink);
 }
-
 .logo-image img {
-  width: 75px;
+  width: 150px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-left: 65px;
+  border-radius: 50%;
+  transition: all 2s ease;
 }
-
-.side-btn {
-  align-self: flex-end;
-  border: 3px solid var(--black);
-}
-
-.bar-1,
-.bar-2,
-.bar-3 {
-  width: 30px;
-  height: 4px;
-  margin: 6px 5px;
-  background: var(--black);
-  transition: all 3s ease;
+.logo-image img:hover {
+  background-color: var(--brown);
 }
 
 /* Side Nav Bar */
-#nav {
-  display: flex;
-  background-color: var(--pink);
-  width: 280px;
-  padding: 2rem;
+.side-nav {
+  display: grid;
+  grid-template-columns: 280px auto;
 }
-
 #side-menu {
   max-width: 280px;
 }
-.side-menu2 {
+.top-menu2 {
   background-color: var(--white);
-  margin-left: 280px;
   display: flex;
+  justify-content: space-between;
 }
-
 .side-nav-links {
   list-style-type: none;
   background: var(--pink);
   min-height: 100vh;
 }
-
 .side-nav-links a {
   display: block;
   padding: 15px 30px;
@@ -67,18 +50,30 @@
   border-right: 5px solid var(--light);
   color: var(--light);
 }
-
 .side-nav-links span {
   font-size: 30px;
   margin-right: 10px;
   color: var(--light);
 }
-
 .side-nav-links span:hover {
   color: var(--pink);
 }
 
 /* Header */
+.head-link h1 {
+  display: block;
+  padding: 15px 30px;
+  font-size: 2rem;
+  text-align: center;
+  font-style: italic;
+  color: var(--brown);
+  margin-bottom: 2rem;
+  transition: all 2s ease;
+}
+.head-link h1:hover {
+  color: var(--light);
+  background: rgba(0, 0, 0, 0.7);
+}
 #search {
   font-size: 1.5rem;
   font-weight: 200;
@@ -87,12 +82,11 @@
   width: 35vw;
   color: var(--brown);
   background: transparent;
+  text-align: center;
 }
-
 #search:hover {
   background: var(--light);
 }
-
 .sign-out {
   font-size: 25px;
   text-decoration: none;
@@ -102,16 +96,12 @@
   display: flex;
   margin: 0.6rem;
   padding: 0.1rem;
-  margin-left: 170px;
 }
-
 .user-area {
   margin: 0.6rem;
   padding: 0.3rem;
   display: flex;
-  margin-left: 150px;
 }
-
 .user-area a {
   text-decoration: none;
   margin-right: 25px;
@@ -120,7 +110,6 @@
 .notification {
   position: relative;
 }
-
 .circle {
   display: inline-block;
   background: red;
@@ -134,7 +123,6 @@
   top: -5px;
   left: 8px;
 }
-
 .user-image {
   background: url("https://randomuser.me/api/portraits/thumb/women/85.jpg")
     no-repeat center center;
@@ -146,13 +134,11 @@
 }
 
 /* Horizontal CSS */
-
 .hor-list {
   list-style-type: none;
   border-top: 6px solid var(--brown);
   background-color: var(--pink);
 }
-
 .hor-item a {
   text-decoration: none;
   display: block;
@@ -161,11 +147,9 @@
   padding: 15px 25px;
   color: var(--brown);
 }
-
 .hor-item a:hover {
   color: var(--light);
 }
-
 a.logo {
   font-size: 40px;
   display: flex;
@@ -175,12 +159,10 @@ a.logo {
   color: var(--light);
   font-style: italic;
 }
-
 a.logo:hover {
   background-color: var(--light);
   color: var(--pink);
 }
-
 @media screen and (min-width: 576px) {
   .hor-list {
     display: flex;

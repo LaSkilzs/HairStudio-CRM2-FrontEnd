@@ -2,13 +2,9 @@ import React from "react";
 
 const Header = () => {
   return (
-    <section id="nav">
-      <div className="logo-image">
-        <img src={require("../images/logo.png")} alt="logo" />
-      </div>
-      <div className="side-menu2">
+    <section id="top-menu">
+      <div className="top-menu2">
         <input id="search" type="search" placeholder="search here" />
-
         <div className="user-area">
           <a href="##">+Add</a>
           <a href="##" className="notification">

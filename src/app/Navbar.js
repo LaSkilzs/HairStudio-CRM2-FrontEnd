@@ -2,18 +2,21 @@ import React from "react";
 import Horizontal from "../navbar/Horizontal";
 import SideBar from "../navbar/SideBar";
 import Header from "../navbar/Header";
-import "../navbar/navbar.css";
+import "../App.css";
 
-const Navbar = () => {
+const Navbar = ({ loggedIn }) => {
   return (
     <section className="nav-container">
-      <nav className="hori-nav">
-        <Horizontal />
-      </nav>
-      <nav className="side-nav">
-        <Header />
-        <SideBar />
-      </nav>
+      {loggedIn ? (
+        <nav className="side-nav">
+          <SideBar />
+          <Header />
+        </nav>
+      ) : (
+        <nav className="hori-nav">
+          <Horizontal />
+        </nav>
+      )}
     </section>
   );
 };

@@ -11,7 +11,6 @@ class Website extends React.Component {
   render() {
     return (
       <div className="website-container">
-        <h1>Website here!</h1>
         <Home />
         <Gallery />
         <Services />
