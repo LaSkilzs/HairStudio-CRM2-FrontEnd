@@ -1,6 +1,5 @@
 import React from "react";
 import TableHead from "./TableHead";
-import Head from "../components/Head";
 import ProfileList from "./ProfileList";
 
 class Profile extends React.Component {
@@ -8,7 +7,6 @@ class Profile extends React.Component {
     return (
       <React.Fragment>
         <div className="profile-container">
-          <Head />
           <ProfileList />
           <TableHead />
         </div>

@@ -3,7 +3,7 @@ import React from "react";
 const Head = () => {
   return (
     <div className="client-header">
-      {/* <h3>Title</h3>
+      <h3>Title</h3>
       <h5>Some Info</h5>
       <hr />
       <div className="client-buttons">
@@ -16,7 +16,7 @@ const Head = () => {
         <select name="" id="" />
         <select name="" id="" />
         <input type="search" />
-      </div> */}
+      </div>
     </div>
   );
 };
