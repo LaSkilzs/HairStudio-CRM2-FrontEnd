@@ -4,17 +4,21 @@ import Appointment from "../client/Appointment";
 import Line from "../client/Line";
 import Dashboard from "../client/Dashboard";
 import Newsfeed from "../client/Newsfeed";
+import Head from "../components/Head";
 
 class Client extends React.Component {
   render() {
     return (
-      <div className="client-container">
-        <Profile />
-        <Appointment />
-        <Line />
-        <Dashboard />
-        <Newsfeed />
-      </div>
+      <section id="client">
+        <Head />
+        <div className="client-container">
+          <Profile />
+          <Appointment />
+          <Line />
+          <Dashboard />
+          <Newsfeed />
+        </div>
+      </section>
     );
   }
 }

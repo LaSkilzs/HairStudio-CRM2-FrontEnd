@@ -6,7 +6,7 @@
 .profile-container {
   height: 90vh;
   display: grid;
-  grid-template-rows: 100px auto auto;
+  grid-template-rows: 550px auto;
   grid-row-gap: 5px;
   margin-left: 280px;
 }
