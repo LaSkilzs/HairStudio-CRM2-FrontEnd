@@ -1,11 +1,13 @@
 import React from "react";
+import ProfileContainer from "../profile/ProfileContainer";
+import "../profile/profile.css";
 
 class Profile extends React.Component {
   render() {
     return (
-      <div>
-        <h1>Profile here!</h1>
-      </div>
+      <section id="profile">
+        <ProfileContainer />
+      </section>
     );
   }
 }
