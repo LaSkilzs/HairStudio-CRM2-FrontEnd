@@ -1,6 +1,5 @@
 import React from "react";
 import GalleryShowCard from "../gallery/GalleryShowCard";
-import GalleryList from "../gallery/GalleryList";
 import Title from "../components/Title";
 import "../website/welcome.css";
 

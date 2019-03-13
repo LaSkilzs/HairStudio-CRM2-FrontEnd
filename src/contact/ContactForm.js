@@ -1,6 +1,6 @@
 import React from "react";
 import ContactDetail from "../forms/ContactDetail";
-import ContactCard from "../components/ContactCard";
+import ContactCard from "./ContactCard";
 
 const ContactForm = props => {
   return (
