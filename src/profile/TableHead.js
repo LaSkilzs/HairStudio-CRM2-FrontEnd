@@ -33,21 +33,6 @@ const TableHead = props => {
             <td>Marcey</td>
             <td>confirmed</td>
           </tr>
-
-          <tr>
-            <td>March 21, 2019</td>
-            <td>9:30am</td>
-            <td>Wrap</td>
-            <td>Marcey</td>
-            <td>confirmed</td>
-          </tr>
-          <tr>
-            <td>March 21, 2019</td>
-            <td>9:30am</td>
-            <td>Wrap</td>
-            <td>Marcey</td>
-            <td>confirmed</td>
-          </tr>
         </tbody>
       </table>
     </div>

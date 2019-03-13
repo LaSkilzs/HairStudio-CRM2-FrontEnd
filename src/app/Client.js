@@ -9,7 +9,6 @@ class Client extends React.Component {
   render() {
     return (
       <div className="client-container">
-        <h1>Client Here!</h1>
         <Profile />
         <Appointment />
         <Line />
