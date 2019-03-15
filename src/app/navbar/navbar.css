@@ -17,10 +17,7 @@
 }
 
 /* Side Nav Bar */
-.side-nav {
-  display: grid;
-  grid-template-columns: 280px auto;
-}
+
 #side-menu {
   max-width: 280px;
 }

@@ -1,16 +1,19 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-export default function LoginShowcase() {
+const LoginShowcase = ({ clickHandler }) => {
   return (
     <div id="right">
       <div className="showcase-content">
         <h1 className="showcase-text">
           Come and Hang with Us <strong>@ShopTalk</strong>
         </h1>
-        <a href="##" className="secondary-btn">
+        <Link to="/" className="secondary-btn" onClick={() => clickHandler}>
           Sign Up Today
-        </a>
+        </Link>
       </div>
     </div>
   );
-}
+};
+
+export default LoginShowcase;

@@ -29,5 +29,14 @@ body {
 
 .nav-container {
   background-color: var(--white);
-  /* border: 2px solid red; */
+}
+
+.client-container {
+  background-color: var(--white);
+  display: grid;
+  grid-template-columns: 280px auto;
+}
+
+.client-header {
+  margin-left: 280px;
 }

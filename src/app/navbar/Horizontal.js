@@ -1,34 +1,45 @@
 import React from "react";
 import "../navbar/navbar.css";
+import { NavLink } from "react-router-dom";
 
 const Horizontal = () => {
   return (
     <div>
       <ul className="hor-list">
         <li className="hor-item">
-          <a href="##" className="logo">
+          <NavLink exact activeClassName="active" to="/" className="logo">
             Shear Elegance
-          </a>
+          </NavLink>
         </li>
         <li className="hor-item">
-          <a href="##">Home</a>
+          <NavLink exact activeClassName="active" to="/">
+            Home
+          </NavLink>
         </li>
         <li className="hor-item">
-          <a href="##">Gallery</a>
+          <NavLink exact activeClassName="active" to="/gallery">
+            Gallery
+          </NavLink>
         </li>
         <li className="hor-item">
-          <a href="##">Services</a>
+          <NavLink exact activeClassName="active" to="/services">
+            Services
+          </NavLink>
         </li>
         <li className="hor-item">
-          <a href="##">About</a>
+          <NavLink exact activeClassName="active" to="/about">
+            About
+          </NavLink>
         </li>
         <li className="hor-item">
-          <a href="##">Contact</a>
+          <NavLink exact activeClassName="active" to="/contact">
+            Contact
+          </NavLink>
         </li>
         <li className="hor-item">
-          <a href="##">
+          <NavLink exact activeClassName="active" to="/login">
             <i className="fas fa-user" />
-          </a>
+          </NavLink>
         </li>
       </ul>
     </div>

@@ -1,7 +1,8 @@
 import React from "react";
 import "../navbar/navbar.css";
+import { NavLink } from "react-router-dom";
 
-const SideBar = props => {
+const SideBar = ({ clickHandler }) => {
   return (
     <React.Fragment>
       <section id="side-menu">
@@ -17,60 +18,65 @@ const SideBar = props => {
             <h1>Shear Elegance</h1>
           </li>
           <li>
-            <a href="##">
+            <NavLink exact activeClassName="active" to="/">
               <span>
                 <i className="fas fa-home" />
               </span>
               Home
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="##">
+            <NavLink exact activeClassName="active" to="/profile">
               <span>
                 <i className="fas fa-users" />
               </span>
               Profile
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="##">
+            <NavLink exact activeClassName="active" to="/profile">
               <span>
                 <i className="fas fa-briefcase" />
               </span>
               Stylist Profile
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="##">
+            <NavLink exact activeClassName="active" to="/appointment">
               <span>
                 <i className="fas fa-calendar-check" />
               </span>
               Appointment
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="##">
+            <NavLink exact activeClassName="active" to="/dashboard">
               <span>
                 <i className="fas fa-tachometer-alt" />
               </span>
               Dashboard
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="##">
+            <NavLink exact activeClassName="active" to="/newsfeed">
               <span>
                 <i className="fas fa-newspaper" />
               </span>
               NewsFeed
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="##">
+            <NavLink
+              exact
+              activeClassName="active"
+              to="/login"
+              onClick={clickHandler}
+            >
               <span>
                 <i className="fas fa-sign-out-alt" />
               </span>
               Logout
-            </a>
+            </NavLink>
           </li>
         </ul>
       </section>

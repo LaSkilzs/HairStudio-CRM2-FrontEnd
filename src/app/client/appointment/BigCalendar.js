@@ -21,7 +21,7 @@ class BigCalendar extends React.Component {
         onEventDrop={this.onEventDrop}
         onEventResize={this.onEventResize}
         resizable
-        style={{ height: "100vh", marginLeft: "280px" }}
+        style={{ height: "100vh" }}
       />
     );
   }

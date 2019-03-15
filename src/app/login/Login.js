@@ -5,11 +5,12 @@ import "../login/login.css";
 
 class Login extends Component {
   render() {
+    const { clickHandler } = this.props;
     return (
       <div id="login">
         <div className="login-container">
           <LoginForm />
-          <LoginShowcase />
+          <LoginShowcase clickHandler={clickHandler} />
         </div>
       </div>
     );
