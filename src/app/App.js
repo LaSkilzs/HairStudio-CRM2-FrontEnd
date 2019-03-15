@@ -1,7 +1,5 @@
 import React from "react";
 import "./App.css";
-import { Route } from "react-router-dom";
-import Login from "./login/Login";
 import Website from "./website/Website";
 import Client from "./client/Client";
 
@@ -9,28 +7,27 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      loggedIn: true,
-      showLogIn: false
+      username: "La",
+      showLogin: false
     };
   }
 
-  clickHandler = () =>
-    this.setState({ showLogIn: !this.state.showLogIn, loggedIn: " " });
+  login = username => this.setState({ username });
+  logout = () => this.setState({ username: "" });
+  handleLogin = () => this.setState({ showLogin: !this.state.showLogin });
+
   render() {
     return (
       <div className="main-container">
-        {this.state.loggedIn ? (
-          <Client clickHandler={this.clickHandler} />
+        {this.state.username === " " ? (
+          <Website
+            handleLogin={this.handleLogin}
+            showLogin={this.state.showLogin}
+          />
         ) : (
-          <Website clickHandler={this.clickHandler} />
-        )}
-        {this.state.loggedIn === "" && (
-          <Route
-            exact
-            path="/login"
-            render={props => (
-              <Login {...props} clickHandler={this.clickHandler} />
-            )}
+          <Client
+            handleLogin={this.handleLogin}
+            showLogin={this.state.showLogin}
           />
         )}
       </div>

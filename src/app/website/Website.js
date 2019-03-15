@@ -7,21 +7,35 @@ import Services from "./services/Services";
 import Testimonials from "./testimonials/Testimonials";
 import About from "./about/About";
 import Contact from "./contact/Contact";
+import Login from "../login/Login";
 import Footer from "./Footer";
 
 class Website extends React.Component {
+  state = {
+    showLogin: false
+  };
+
+  handleLogin = () => this.setState({ showLogin: !this.state.showLogin });
+
   render() {
     return (
       <div className="website-container">
-        <Navbar />
+        {this.state.showLogin ? null : (
+          <Navbar handleLogin={this.props.handleLogin} />
+        )}
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/gallery" component={Gallery} />
-          <Route path="/services" component={Services} />
-          <Route path="/testimonials" component={Testimonials} />
-          <Route path="/about" component={About} />
-          <Route path="/contact" component={Contact} />
-          <Footer />
+          <Route exact path="/gallery" component={Gallery} />
+          <Route exact path="/services" component={Services} />
+          <Route exact path="/testimonials" component={Testimonials} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/contact" component={Contact} />
+          <Route
+            exact
+            path="/login"
+            render={routerProps => <Login {...routerProps} />}
+          />
+          <Route exact path="/footer" component={Footer} />
           <Route render={() => <p>Not Found</p>} />
         </Switch>
       </div>

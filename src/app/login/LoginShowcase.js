@@ -8,7 +8,7 @@ const LoginShowcase = ({ clickHandler }) => {
         <h1 className="showcase-text">
           Come and Hang with Us <strong>@ShopTalk</strong>
         </h1>
-        <Link to="/" className="secondary-btn" onClick={() => clickHandler}>
+        <Link to="/" className="secondary-btn" onClick={() => clickHandler()}>
           Sign Up Today
         </Link>
       </div>

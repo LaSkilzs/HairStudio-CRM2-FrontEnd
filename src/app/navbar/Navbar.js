@@ -5,7 +5,7 @@ import "../App.css";
 const Navbar = props => {
   return (
     <section className="nav-container">
-      <Horizontal />
+      <Horizontal handleLogin={props.handleLogin} />
     </section>
   );
 };

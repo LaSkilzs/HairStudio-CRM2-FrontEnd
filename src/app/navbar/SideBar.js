@@ -1,8 +1,9 @@
 import React from "react";
 import "../navbar/navbar.css";
+import propTypes from "prop-types";
 import { NavLink } from "react-router-dom";
 
-const SideBar = ({ clickHandler }) => {
+const SideBar = props => {
   return (
     <React.Fragment>
       <section id="side-menu">
@@ -70,7 +71,7 @@ const SideBar = ({ clickHandler }) => {
               exact
               activeClassName="active"
               to="/login"
-              onClick={clickHandler}
+              onClick={props.handleLogin}
             >
               <span>
                 <i className="fas fa-sign-out-alt" />
@@ -84,4 +85,7 @@ const SideBar = ({ clickHandler }) => {
   );
 };
 
+SideBar.propTypes = {
+  handleLogin: propTypes.func.isRequired
+};
 export default SideBar;
