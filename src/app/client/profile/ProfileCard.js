@@ -30,7 +30,16 @@ const ProfileCard = props => {
               <i className="fab fa-twitter" />
             </a>
           </li>
+          <li>
+            <a href="##">
+              <i className="fab fa-snapchat-ghost" />
+            </a>
+          </li>
         </ul>
+        <div className="btn-group">
+          <button className="profile-btn">See More </button>
+          <button className="profile-btn"> Edit </button>
+        </div>
       </div>
     </div>
   );

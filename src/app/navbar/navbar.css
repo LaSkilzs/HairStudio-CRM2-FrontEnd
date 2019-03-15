@@ -20,11 +20,16 @@
 
 #side-menu {
   max-width: 280px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
 }
 .top-menu2 {
   background-color: var(--white);
   display: flex;
   justify-content: space-between;
+  margin-left: 280px;
+  margin-bottom: 10px;
 }
 .side-nav-links {
   list-style-type: none;

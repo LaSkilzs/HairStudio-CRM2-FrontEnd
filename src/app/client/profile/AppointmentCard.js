@@ -12,34 +12,39 @@ const AppointmentCard = props => {
         <div className="appointment">
           <i className="fas fa-calendar-check" />
           <h4>Nothing Scheduled</h4>
-          <button className="profile-btn">Book Today</button>
         </div>
 
         <ul className="appointment-facts">
           <li className="lastwash">
-            Last Appointment: {props.last_appointment}
+            Next Appointment: {props.next_appointment}
           </li>
           <li className="lastwash">Last Wash: {props.last_wash}</li>
           <li className="lastperm">Last Perm: {props.last_perm}</li>
           <li className="lastdyes">Last Rinse/Dye: {props.last_dyes}</li>
+          <li className="lastdyes">Stylist: {props.stylist}</li>
         </ul>
+        <div className="btn-group">
+          <button className="profile-btn">Book Today </button>
+          <button className="profile-btn"> Edit </button>
+        </div>
       </div>
     </div>
   );
 };
 
 AppointmentCard.propTypes = {
-  last_appointment: propTypes.string.isRequired,
+  next_appointment: propTypes.string.isRequired,
   last_wash: propTypes.string.isRequired,
   last_perm: propTypes.string.isRequired,
-  last_dyes: propTypes.string.isRequired
+  last_dyes: propTypes.string.isRequired,
+  stylist: propTypes.string.isRequired
 };
-
 AppointmentCard.defaultProps = {
-  last_appointment: "unknown",
+  next_appointment: "unknown",
   last_wash: "unknown",
   last_perm: "unknown",
-  last_dyes: "unknown"
+  last_dyes: "unknown",
+  stylist: "Lead Stylist"
 };
 
 export default AppointmentCard;
