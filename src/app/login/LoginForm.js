@@ -7,6 +7,7 @@ class LoginForm extends React.Component {
     this.state = {};
   }
   render() {
+    console.log(this.props);
     return (
       <div id="left">
         <div id="sign-in">
@@ -27,7 +28,7 @@ class LoginForm extends React.Component {
               Sign In
             </button>
           </form>
-          <LoginMisc />
+          <LoginMisc login={this.props.login} logout={this.props.logout} />
         </div>
       </div>
     );

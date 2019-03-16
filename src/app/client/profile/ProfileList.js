@@ -23,4 +23,11 @@ ProfileList.propTypes = {
   profile: propTypes.array.isRequired
 };
 
+ProfileList.defaultProps = {
+  user: {},
+  appointments: [{}],
+  haircard: [{}],
+  profile: [{}]
+};
+
 export default ProfileList;

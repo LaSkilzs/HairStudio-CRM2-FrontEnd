@@ -1,7 +1,5 @@
 import React from "react";
 import "./App.css";
-import Login from "./login/Login";
-import Navbar from "./navbar/Navbar";
 import Website from "./website/Website";
 import Client from "./client/Client";
 
@@ -9,16 +7,29 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      loggedIn: false
+      username: " ",
+      showLogin: false
     };
   }
+
+  login = username => this.setState({ username });
+  logout = () => this.setState({ username: "" });
+  handleLogin = () => this.setState({ showLogin: !this.state.showLogin });
+
   render() {
     return (
       <div className="main-container">
-        <Navbar loggedIn={this.state.loggedIn} />
-        <Website />
-        <Login />
-        <Client />
+        {this.state.username === " " ? (
+          <Website
+            handleLogin={this.handleLogin}
+            showLogin={this.state.showLogin}
+          />
+        ) : (
+          <Client
+            handleLogin={this.handleLogin}
+            showLogin={this.state.showLogin}
+          />
+        )}
       </div>
     );
   }

@@ -1,6 +1,6 @@
 import React from "react";
 
-const LoginMisc = () => {
+const LoginMisc = props => {
   return (
     <React.Fragment>
       <div className="login-links">
@@ -17,7 +17,13 @@ const LoginMisc = () => {
       <footer id="main-footer">
         <p>Copyright &copy; 2019, branmanagement All Rights Reserved</p>
         <div className="misc-links">
-          <a href="##">terms of user</a> | <a href="##">Privacy Policy</a>
+          <a href="##" onClick={props.login}>
+            terms of user
+          </a>
+          |
+          <a href="##" onClick={props.logout}>
+            Privacy Policy
+          </a>
         </div>
       </footer>
     </React.Fragment>

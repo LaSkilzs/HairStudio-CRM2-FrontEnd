@@ -24,7 +24,7 @@ ContactCard.defaultProps = {
   address: "1234 Salon Blvd",
   city: "Curly",
   state: "New Jersey",
-  zip: "09873"
+  zip: parseInt("09873")
 };
 
 export default ContactCard;

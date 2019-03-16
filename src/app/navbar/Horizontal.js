@@ -1,38 +1,59 @@
 import React from "react";
 import "../navbar/navbar.css";
-
-const Horizontal = () => {
+import propTypes from "prop-types";
+// import { NavLink } from "react-router-dom";
+import { NavHashLink as NavLink } from "react-router-hash-link";
+const Horizontal = props => {
   return (
     <div>
       <ul className="hor-list">
         <li className="hor-item">
-          <a href="##" className="logo">
+          <NavLink exact activeClassName="active" to="/" className="logo">
             Shear Elegance
-          </a>
+          </NavLink>
         </li>
         <li className="hor-item">
-          <a href="##">Home</a>
+          <NavLink exact activeClassName="active" smooth to="/#home">
+            Home
+          </NavLink>
         </li>
         <li className="hor-item">
-          <a href="##">Gallery</a>
+          <NavLink exact activeClassName="active" smooth to="/gallery#gallery">
+            Gallery
+          </NavLink>
         </li>
         <li className="hor-item">
-          <a href="##">Services</a>
+          <NavLink exact activeClassName="active" to="/services">
+            Services
+          </NavLink>
         </li>
         <li className="hor-item">
-          <a href="##">About</a>
+          <NavLink exact activeClassName="active" to="/about">
+            About
+          </NavLink>
         </li>
         <li className="hor-item">
-          <a href="##">Contact</a>
+          <NavLink exact activeClassName="active" to="/contact">
+            Contact
+          </NavLink>
         </li>
         <li className="hor-item">
-          <a href="##">
+          <NavLink
+            exact
+            activeClassName="active"
+            to="/login"
+            onClick={props.handleLogin}
+          >
             <i className="fas fa-user" />
-          </a>
+          </NavLink>
         </li>
       </ul>
     </div>
   );
+};
+
+Horizontal.propTypes = {
+  handleLogin: propTypes.func.isRequired
 };
 
 export default Horizontal;
