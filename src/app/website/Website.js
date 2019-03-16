@@ -11,16 +11,10 @@ import Login from "../login/Login";
 import Footer from "./Footer";
 
 class Website extends React.Component {
-  state = {
-    showLogin: false
-  };
-
-  handleLogin = () => this.setState({ showLogin: !this.state.showLogin });
-
   render() {
     return (
       <div className="website-container">
-        {this.state.showLogin ? null : (
+        {this.props.showLogin ? null : (
           <Navbar handleLogin={this.props.handleLogin} />
         )}
         <Switch>

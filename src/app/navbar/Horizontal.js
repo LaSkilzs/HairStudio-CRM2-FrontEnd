@@ -1,8 +1,8 @@
 import React from "react";
 import "../navbar/navbar.css";
 import propTypes from "prop-types";
-import { NavLink } from "react-router-dom";
-
+// import { NavLink } from "react-router-dom";
+import { NavHashLink as NavLink } from "react-router-hash-link";
 const Horizontal = props => {
   return (
     <div>
@@ -13,12 +13,12 @@ const Horizontal = props => {
           </NavLink>
         </li>
         <li className="hor-item">
-          <NavLink exact activeClassName="active" to="/">
+          <NavLink exact activeClassName="active" smooth to="/#home">
             Home
           </NavLink>
         </li>
         <li className="hor-item">
-          <NavLink exact activeClassName="active" to="/gallery">
+          <NavLink exact activeClassName="active" smooth to="/gallery#gallery">
             Gallery
           </NavLink>
         </li>

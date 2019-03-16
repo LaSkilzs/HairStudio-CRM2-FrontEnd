@@ -3,6 +3,7 @@ import "../../../css/welcome.css";
 
 class About extends React.Component {
   render() {
+    // console.log(window.location);
     return (
       <section id="about">
         <h1>We Are Professionals</h1>
