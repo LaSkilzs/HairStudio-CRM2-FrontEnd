@@ -10,9 +10,9 @@ class Appointment extends React.Component {
   }
   render() {
     return (
-      <div>
+      <React.Fragment>
         <BigCalendar events={this.state.events} />
-      </div>
+      </React.Fragment>
     );
   }
 }
