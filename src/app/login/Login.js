@@ -5,12 +5,12 @@ import "../login/login.css";
 
 const Login = props => {
   return (
-    <div id="login">
+    <section id="login">
       <div className="login-container">
         <LoginForm />
         <LoginShowcase />
       </div>
-    </div>
+    </section>
   );
 };
 export default Login;
