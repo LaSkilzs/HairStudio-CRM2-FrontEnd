@@ -32,3 +32,4 @@ From a technical learining perspective.This project was created using react/redu
 ## Project Demo & GIFS
 
 ## Authors
+La Fountain
