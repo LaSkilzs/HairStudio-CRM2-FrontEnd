@@ -29,7 +29,7 @@ From a technical learining perspective.This project was created using react/redu
 3.  CSS3
 4.  Rails Api
 
-## Project Demo & GIFS
+## Project Status
 currrent project status --- refactoring ui, to create scroll pages
 
 ## Authors
